@@ -10,9 +10,9 @@ eem_read_aqualog <- function(file) {
     eem <- read.opj(file)
     
     # Extract the necessary data from the eem object
-    ex <- eem
-    em <- eem$x[, 1]
-    eem <- as.matrix(eem$x[, -1])
+    ex <- seq(800, length.out = 189, by = -3)
+    em <- eem$CPRaw1$Note$A
+    eem <- as.matrix(eem$CPRaw1$Note$A)
   } else {
     # Continue with the original code for other file formats
     eem <- stringr::str_extract_all(data, "-?\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d+)?")
