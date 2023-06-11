@@ -1,5 +1,5 @@
 # *************************************************************************
-# Fonction reading Aqualog dat files.
+# Function reading Aqualog dat files.
 # *************************************************************************
 eem_read_aqualog <- function(file) {
   data <- readLines(file)
