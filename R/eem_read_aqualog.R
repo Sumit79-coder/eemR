@@ -10,7 +10,7 @@ eem_read_aqualog <- function(file) {
     eem <- read.opj(file)
     
     # Extract the necessary data from the eem object
-    ex <- eem$ex
+    ex <- eem
     em <- eem$x[, 1]
     eem <- as.matrix(eem$x[, -1])
   } else {
