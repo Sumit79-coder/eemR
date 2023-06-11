@@ -2,7 +2,7 @@
 # Fonction reading Aqualog dat files.
 # *************************************************************************
 eem_read_aqualog <- function(file) {
-  data <- readLines(file)
+  data <- read.opj(file)
   
   # Check if the file has .opj extension
   if (tools::file_ext(file) == "opj") {
